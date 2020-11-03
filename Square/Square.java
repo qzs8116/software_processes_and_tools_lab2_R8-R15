@@ -28,20 +28,6 @@ public class Square {
         return flag;
     }
 
-    /**
-     * 方块的数值变化
-     */
-    public void squareChange(){
-        num = num * 2;
-        score.addScore(num);
-        if (board.getNum_max() <= num){
-            board.setNum_max(num*2);
-            g.addNum(board.getCoin());
-            board.setCoin(board.getCoin()+1);
-        }
-        setFlag();
-    }
-
     public void setFlag(){
         flag = 1;
     }
